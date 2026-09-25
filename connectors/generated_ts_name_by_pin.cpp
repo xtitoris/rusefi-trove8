@@ -8,12 +8,14 @@ const char* getBoardSpecificPinName(brain_pin_e brainPin) {
 	switch (brainPin) {
 		case Gpio::B14:
 			return "B14 Output";
-		case Gpio::E2:
-			return "VR/Hall 1 (E2)";
-		case Gpio::E3:
-			return "VR/Hall 2 (E3)";
-		case Gpio::E4:
-			return "VR/Hall 3 (E4)";
+		case Gpio::E12:
+			return "Crank Input (E12)";
+		case Gpio::E13:
+			return "Cam Input (E13)";
+		case Gpio::E14:
+			return "Digital Input 3 (E14)";
+		case Gpio::E15:
+			return "Digital Input 4 (E15)";
 		default:
 			return nullptr;
 	}

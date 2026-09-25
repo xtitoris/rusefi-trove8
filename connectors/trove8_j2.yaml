@@ -1,0 +1,178 @@
+# Interactive pinout for the trove8 output connector J2 (Delphi Sicma 24,
+# grey connector in connector.png).
+pins:
+  - pin: A1
+    type: inj
+    function: Injector 1 (low-side)
+
+  - pin: A2
+    type: inj
+    function: Injector 2 (low-side)
+
+  - pin: A3
+    type: inj
+    function: Injector 3 (low-side)
+
+  - pin: A4
+    type: inj
+    function: Injector 4 (low-side)
+
+  - pin: A5
+    type: inj
+    function: Injector 5 (low-side)
+
+  - pin: A6
+    type: inj
+    function: Injector 6 (low-side)
+
+  - pin: A7
+    type: inj
+    function: Injector 7 (low-side)
+
+  - pin: A8
+    type: inj
+    function: Injector 8 (low-side)
+
+  - pin: B1
+    type: ign
+    function: Ignition coil 1
+
+  - pin: B2
+    type: ign
+    function: Ignition coil 2
+
+  - pin: B3
+    type: ign
+    function: Ignition coil 3
+
+  - pin: B4
+    type: ign
+    function: Ignition coil 4
+
+  - pin: B5
+    type: ign
+    function: Ignition coil 5
+
+  - pin: B6
+    type: ign
+    function: Ignition coil 6
+
+  - pin: B7
+    type: ign
+    function: Ignition coil 7
+
+  - pin: B8
+    type: ign
+    function: Ignition coil 8
+
+  - pin: C1
+    type: pgnd
+    function: Power ground
+
+  - pin: C2
+    type: ls
+    function: Aux low-side output 6 (OUT_LS6)
+
+  - pin: C3
+    type: ls
+    function: Aux low-side output 5 (OUT_LS5)
+
+  - pin: C4
+    type: ls
+    function: Aux low-side output 4 (OUT_LS4)
+
+  - pin: C5
+    type: ls
+    function: Aux low-side output 3 (OUT_LS3)
+
+  - pin: C6
+    type: ls
+    function: Aux low-side output 2 (OUT_LS2)
+
+  - pin: C7
+    type: ls
+    function: Aux low-side output 1 (OUT_LS1)
+
+  - pin: C8
+    type: pgnd
+    function: Power ground
+
+info:
+  name: Output connector (J2)
+  cid: j2
+  order: 2
+  image:
+    file: connector.png
+    pins:
+      - pin: A1
+        x: 1052
+        y: 224
+      - pin: A2
+        x: 1118
+        y: 224
+      - pin: A3
+        x: 1169
+        y: 224
+      - pin: A4
+        x: 1219
+        y: 224
+      - pin: A5
+        x: 1270
+        y: 224
+      - pin: A6
+        x: 1320
+        y: 224
+      - pin: A7
+        x: 1371
+        y: 224
+      - pin: A8
+        x: 1435
+        y: 224
+      - pin: B1
+        x: 1052
+        y: 300
+      - pin: B2
+        x: 1118
+        y: 300
+      - pin: B3
+        x: 1169
+        y: 300
+      - pin: B4
+        x: 1219
+        y: 300
+      - pin: B5
+        x: 1270
+        y: 300
+      - pin: B6
+        x: 1320
+        y: 300
+      - pin: B7
+        x: 1371
+        y: 300
+      - pin: B8
+        x: 1435
+        y: 300
+      - pin: C1
+        x: 1052
+        y: 377
+      - pin: C2
+        x: 1118
+        y: 377
+      - pin: C3
+        x: 1169
+        y: 377
+      - pin: C4
+        x: 1219
+        y: 377
+      - pin: C5
+        x: 1270
+        y: 377
+      - pin: C6
+        x: 1320
+        y: 377
+      - pin: C7
+        x: 1371
+        y: 377
+      - pin: C8
+        x: 1435
+        y: 377
