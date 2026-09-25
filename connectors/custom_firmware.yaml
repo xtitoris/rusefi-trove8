@@ -5,77 +5,95 @@ pins:
 
   - id: EFI_ADC_0
     class: analog_inputs
-# getAdcChannelBrainPin in 'stm32_adc.cpp' says EFI_ADC_0 is PA0
-    ts_name: On-board Battery Sense (A0)
+# PA0, currently exposed as AuxAnalog2 (auxAnalogInputs[1])
+    ts_name: Analog Inputs 0 (A0)
 
   - id: EFI_ADC_1
     class: analog_inputs
+# PA1, currently exposed as AuxAnalog1 (auxAnalogInputs[0])
     ts_name: Analog Inputs 1 (A1)
 
   - id: EFI_ADC_2
     class: analog_inputs
-    ts_name: Analog Inputs 2 (A2)
+# PA2 - knock channel 1 (RC filter + MCP6004, sampled on ADC3)
+    ts_name: Knock 1 (A2)
 
   - id: EFI_ADC_3
     class: analog_inputs
+# PA3 - free, candidate PPS1 input (unassigned until wired in TS)
     ts_name: Analog Inputs 3 (A3)
 
   - id: EFI_ADC_4
     class: analog_inputs
-    ts_name: Analog Inputs 4 (A4)
+# PA4 - TPS1 main
+    ts_name: TPS1 (A4)
 
   - id: EFI_ADC_5
     class: analog_inputs
-    ts_name: On-board MAP (A5)
+# PA5 - battery voltage sense (48.7k/10k divider, vbattAdcChannel)
+    ts_name: Battery Sense (A5)
 
   - id: EFI_ADC_6
     class: analog_inputs
+# PA6 - free (original knock 2 route, bodged to PC1 on first batch)
     ts_name: Analog Inputs 6 (A6)
 
   - id: EFI_ADC_7
     class: analog_inputs
+# PA7 - free, candidate AC request input
     ts_name: Analog Inputs 7 (A7)
 
   - id: EFI_ADC_8
     class: analog_inputs
-    ts_name: On-board BARO (B0)
-
-  - id: EFI_ADC_9
-    class: analog_inputs
-    ts_name: Analog Inputs 9 (B1)
+# PB0 - TPS1 secondary
+    ts_name: TPS1 Secondary (B0)
 
   - id: EFI_ADC_10
     class: analog_inputs
-    ts_name: Analog Inputs 10 (C0)
+# PC0 - MAP sensor (sampled by the fast ADC)
+    ts_name: MAP (C0)
 
   - id: EFI_ADC_11
     class: analog_inputs
-    ts_name: Primary On-board O2 (C1)
+# PC1 - knock channel 2 (ADC3 channel 11; bodge wire from A6 on first batch)
+    ts_name: Knock 2 (C1)
 
   - id: EFI_ADC_12
     class: analog_inputs
-    ts_name: Secondary On-board O2 (C2)
+# PC2 - CLT (4.7k bias + 2:1 divider)
+    ts_name: CLT (C2)
 
   - id: EFI_ADC_13
     class: analog_inputs
-    ts_name: Analog Inputs 13 (C3)
+# PC3 - IAT (4.7k bias + 2:1 divider)
+    ts_name: IAT (C3)
 
   - id: EFI_ADC_14
     class: analog_inputs
+# PC4 - free, candidate PPS2 input
     ts_name: Analog Inputs 14 (C4)
 
   - id: EFI_ADC_15
     class: analog_inputs
+# PC5 - free
     ts_name: Analog Inputs 15 (C5)
 
-  - id: [E2, E2]
+  - id: [E12, E12]
     class: [switch_inputs, event_inputs]
-    ts_name: VR/Hall 1 (E2)
+# MCU_IN_D1 - crank trigger (conditioned digital input)
+    ts_name: Crank Input (E12)
 
-  - id: [E3, E3]
+  - id: [E13, E13]
     class: [switch_inputs, event_inputs]
-    ts_name: VR/Hall 2 (E3)
+# MCU_IN_D2 - cam trigger (conditioned digital input)
+    ts_name: Cam Input (E13)
 
-  - id: [E4, E4]
+  - id: [E14, E14]
     class: [switch_inputs, event_inputs]
-    ts_name: VR/Hall 3 (E4)
+# MCU_IN_D3 - spare conditioned digital input
+    ts_name: Digital Input 3 (E14)
+
+  - id: [E15, E15]
+    class: [switch_inputs, event_inputs]
+# MCU_IN_D4 - spare conditioned digital input
+    ts_name: Digital Input 4 (E15)
