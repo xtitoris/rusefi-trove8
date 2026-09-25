@@ -35,11 +35,6 @@ pins:
 
   - id: EFI_ADC_6
     class: analog_inputs
-# PA6 - free (original knock 2 route, bodged to PC1 on first batch)
-    ts_name: Analog Inputs 6 (A6)
-
-  - id: EFI_ADC_7
-    class: analog_inputs
 # PA7 - free, candidate AC request input
     ts_name: Analog Inputs 7 (A7)
 
