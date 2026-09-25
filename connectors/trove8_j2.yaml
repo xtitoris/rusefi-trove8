@@ -1,5 +1,7 @@
 # Interactive pinout for the trove8 output connector J2 (Delphi Sicma 24,
 # grey connector in connector.png).
+# Pins are numbered 1-8 right-to-left on the photo (male connector), so
+# pin 1 sits at the rightmost column.
 pins:
   - pin: A1
     type: inj
@@ -105,74 +107,74 @@ info:
     file: connector.png
     pins:
       - pin: A1
-        x: 1052
+        x: 1435
         y: 224
       - pin: A2
-        x: 1118
+        x: 1371
         y: 224
       - pin: A3
-        x: 1169
+        x: 1320
         y: 224
       - pin: A4
-        x: 1219
+        x: 1270
         y: 224
       - pin: A5
-        x: 1270
+        x: 1219
         y: 224
       - pin: A6
-        x: 1320
+        x: 1169
         y: 224
       - pin: A7
-        x: 1371
+        x: 1118
         y: 224
       - pin: A8
-        x: 1435
+        x: 1052
         y: 224
       - pin: B1
-        x: 1052
+        x: 1435
         y: 300
       - pin: B2
-        x: 1118
+        x: 1371
         y: 300
       - pin: B3
-        x: 1169
+        x: 1320
         y: 300
       - pin: B4
-        x: 1219
+        x: 1270
         y: 300
       - pin: B5
-        x: 1270
+        x: 1219
         y: 300
       - pin: B6
-        x: 1320
+        x: 1169
         y: 300
       - pin: B7
-        x: 1371
+        x: 1118
         y: 300
       - pin: B8
-        x: 1435
+        x: 1052
         y: 300
       - pin: C1
-        x: 1052
+        x: 1435
         y: 377
       - pin: C2
-        x: 1118
-        y: 377
-      - pin: C3
-        x: 1169
-        y: 377
-      - pin: C4
-        x: 1219
-        y: 377
-      - pin: C5
-        x: 1270
-        y: 377
-      - pin: C6
-        x: 1320
-        y: 377
-      - pin: C7
         x: 1371
         y: 377
+      - pin: C3
+        x: 1320
+        y: 377
+      - pin: C4
+        x: 1270
+        y: 377
+      - pin: C5
+        x: 1219
+        y: 377
+      - pin: C6
+        x: 1169
+        y: 377
+      - pin: C7
+        x: 1118
+        y: 377
       - pin: C8
-        x: 1435
+        x: 1052
         y: 377
