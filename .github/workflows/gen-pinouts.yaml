@@ -67,6 +67,14 @@ jobs:
     - name: Showing Output Folder
       run: ls -l pinouts
 
+    - name: Upload Page as Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: pinouts
+        path: pinouts
+        if-no-files-found: error
+        retention-days: 14
+
     - name: Upload Pinouts
       env:
         pass: ${{ secrets.RUSEFI_SSH_PASS }}
