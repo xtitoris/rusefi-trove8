@@ -1,5 +1,7 @@
 # Interactive pinout for the trove8 main input connector J1 (Delphi Sicma 24,
 # black connector in connector.png).
+# Pins are numbered 1-8 right-to-left on the photo (male connector), so
+# pin 1 sits at the rightmost column.
 pins:
   - pin: A1
     ts_name: Digital Input 3 (E14)
@@ -123,74 +125,74 @@ info:
     file: connector.png
     pins:
       - pin: A1
-        x: 237
+        x: 620
         y: 224
       - pin: A2
-        x: 303
+        x: 556
         y: 224
       - pin: A3
-        x: 354
+        x: 505
         y: 224
       - pin: A4
-        x: 404
+        x: 455
         y: 224
       - pin: A5
-        x: 455
+        x: 404
         y: 224
       - pin: A6
-        x: 505
+        x: 354
         y: 224
       - pin: A7
-        x: 556
+        x: 303
         y: 224
       - pin: A8
-        x: 620
+        x: 237
         y: 224
       - pin: B1
-        x: 237
+        x: 620
         y: 300
       - pin: B2
-        x: 303
+        x: 556
         y: 300
       - pin: B3
-        x: 354
+        x: 505
         y: 300
       - pin: B4
-        x: 404
+        x: 455
         y: 300
       - pin: B5
-        x: 455
+        x: 404
         y: 300
       - pin: B6
-        x: 505
+        x: 354
         y: 300
       - pin: B7
-        x: 556
+        x: 303
         y: 300
       - pin: B8
-        x: 620
+        x: 237
         y: 300
       - pin: C1
-        x: 237
+        x: 620
         y: 377
       - pin: C2
-        x: 303
-        y: 377
-      - pin: C3
-        x: 354
-        y: 377
-      - pin: C4
-        x: 404
-        y: 377
-      - pin: C5
-        x: 455
-        y: 377
-      - pin: C6
-        x: 505
-        y: 377
-      - pin: C7
         x: 556
         y: 377
+      - pin: C3
+        x: 505
+        y: 377
+      - pin: C4
+        x: 455
+        y: 377
+      - pin: C5
+        x: 404
+        y: 377
+      - pin: C6
+        x: 354
+        y: 377
+      - pin: C7
+        x: 303
+        y: 377
       - pin: C8
-        x: 620
+        x: 237
         y: 377
