@@ -2,7 +2,7 @@ name: Update rusEFI Reference
 
 on:
   schedule:
-    - cron: '5 17 * * *' # update rusEFI reference daily at 5:05 pm
+    - cron: '5 17 * * MON' # update rusEFI reference weekly on Mondays at 5:05 pm
   workflow_dispatch:
 
 jobs:
