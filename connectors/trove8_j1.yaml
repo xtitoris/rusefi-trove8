@@ -1,0 +1,196 @@
+# Interactive pinout for the trove8 main input connector J1 (Delphi Sicma 24,
+# black connector in connector.png).
+pins:
+  - pin: A1
+    ts_name: Digital Input 3 (E14)
+    type: din
+    function: Digital input 3 (conditioned, spare)
+
+  - pin: A2
+    ts_name: Crank Input (E12)
+    type: din
+    function: Crank position sensor (conditioned digital input)
+
+  - pin: A3
+    ts_name: TPS1 (A4)
+    type: at
+    function: TPS 1 signal
+
+  - pin: A4
+    ts_name: Analog Inputs 3 (A3)
+    type: at
+    function: Throttle pedal position 1 signal (PPS1, not configured)
+
+  - pin: A5
+    ts_name: MAP (C0)
+    type: at
+    function: MAP sensor signal
+
+  - pin: A6
+    ts_name: Analog Inputs 1 (A1)
+    type: at
+    function: Oxygen sensor 1 signal (narrowband)
+
+  - pin: A7
+    ts_name: CLT (C2)
+    type: at
+    function: Coolant temperature sensor
+
+  - pin: A8
+    type: 5V
+    function: Sensor supply +5V (via F11 ferrite)
+
+  - pin: B1
+    ts_name: Digital Input 4 (E15)
+    type: din
+    function: Digital input 4 (conditioned, spare)
+
+  - pin: B2
+    ts_name: Cam Input (E13)
+    type: din
+    function: Cam position sensor (conditioned digital input)
+
+  - pin: B3
+    ts_name: TPS1 Secondary (B0)
+    type: at
+    function: TPS 2 signal (secondary)
+
+  - pin: B4
+    ts_name: Analog Inputs 14 (C4)
+    type: at
+    function: Throttle pedal position 2 signal (PPS2, not configured)
+
+  - pin: B5
+    ts_name: Analog Inputs 7 (A7)
+    type: at
+    function: AC clutch request input (not configured)
+
+  - pin: B6
+    ts_name: Analog Inputs 0 (A0)
+    type: at
+    function: Oxygen sensor 2 signal (narrowband)
+
+  - pin: B7
+    ts_name: IAT (C3)
+    type: at
+    function: Intake air temperature sensor
+
+  - pin: B8
+    type: sgnd
+    function: Sensor ground (analog GNDA)
+
+  - pin: C1
+    type: 12v
+    function: Battery +12V switched (ignition)
+
+  - pin: C2
+    type: 12v
+    function: Battery +12V permanent
+
+  - pin: C3
+    type: pgnd
+    function: Power ground
+
+  - pin: C4
+    ts_name: Knock 1 (A2)
+    type: at
+    function: Knock sensor 1 signal
+
+  - pin: C5
+    ts_name: Knock 2 (C1)
+    type: at
+    function: Knock sensor 2 signal
+
+  - pin: C6
+    type: can
+    function: CAN bus low
+
+  - pin: C7
+    type: can
+    function: CAN bus high
+
+  - pin: C8
+    type: pgnd
+    function: Power ground
+
+info:
+  title: trove8 ECU
+  directory: trove8
+  name: Main input connector (J1)
+  cid: j1
+  order: 1
+  image:
+    file: connector.png
+    pins:
+      - pin: A1
+        x: 237
+        y: 224
+      - pin: A2
+        x: 303
+        y: 224
+      - pin: A3
+        x: 354
+        y: 224
+      - pin: A4
+        x: 404
+        y: 224
+      - pin: A5
+        x: 455
+        y: 224
+      - pin: A6
+        x: 505
+        y: 224
+      - pin: A7
+        x: 556
+        y: 224
+      - pin: A8
+        x: 620
+        y: 224
+      - pin: B1
+        x: 237
+        y: 300
+      - pin: B2
+        x: 303
+        y: 300
+      - pin: B3
+        x: 354
+        y: 300
+      - pin: B4
+        x: 404
+        y: 300
+      - pin: B5
+        x: 455
+        y: 300
+      - pin: B6
+        x: 505
+        y: 300
+      - pin: B7
+        x: 556
+        y: 300
+      - pin: B8
+        x: 620
+        y: 300
+      - pin: C1
+        x: 237
+        y: 377
+      - pin: C2
+        x: 303
+        y: 377
+      - pin: C3
+        x: 354
+        y: 377
+      - pin: C4
+        x: 404
+        y: 377
+      - pin: C5
+        x: 455
+        y: 377
+      - pin: C6
+        x: 505
+        y: 377
+      - pin: C7
+        x: 556
+        y: 377
+      - pin: C8
+        x: 620
+        y: 377

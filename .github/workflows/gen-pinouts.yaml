@@ -20,7 +20,7 @@ jobs:
     - name: Generate Pinouts
       uses: chuckwagoncomputing/interactive-pinout@2.15
       with:
-        mapping-path: connectors/*.yaml
+        mapping-path: connectors/trove8_*.yaml
         warnings: "error"
         warning-dupe: "error"
         columns: |
