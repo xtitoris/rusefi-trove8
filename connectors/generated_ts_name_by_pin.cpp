@@ -8,16 +8,58 @@
 // see comments at declaration in pin_repository.h
 const char* getBoardSpecificPinName(brain_pin_e brainPin) {
 	switch (brainPin) {
-		case Gpio::B14:
-			return "B14 Output";
+		case Gpio::A8:
+			return "Injector 6 (Grey A6)";
+		case Gpio::A9:
+			return "Injector 2 (Grey A2)";
+		case Gpio::B8:
+			return "Ignition 6 (Grey B6)";
+		case Gpio::B9:
+			return "Ignition 7 (Grey B7)";
+		case Gpio::C13:
+			return "Ignition 1 (Grey B1)";
+		case Gpio::C6:
+			return "PWM 2 Aux Low-side (Grey C6)";
+		case Gpio::C7:
+			return "PWM 3 Aux Low-side (Grey C5)";
+		case Gpio::C8:
+			return "PWM 4 Aux Low-side (Grey C4)";
+		case Gpio::C9:
+			return "PWM 5 Aux Low-side (Grey C3)";
+		case Gpio::D10:
+			return "Injector 4 (Grey A4)";
+		case Gpio::D11:
+			return "Injector 3 (Grey A3)";
+		case Gpio::D12:
+			return "Injector 8 (Grey A8)";
+		case Gpio::D13:
+			return "PWM 1 Aux Low-side (Grey C7)";
+		case Gpio::D14:
+			return "PWM 6 Aux Low-side (Grey C2)";
+		case Gpio::D15:
+			return "Injector 7 (Grey A7)";
+		case Gpio::D2:
+			return "Injector 5 (Grey A5)";
+		case Gpio::D3:
+			return "Injector 1 (Grey A1)";
 		case Gpio::E12:
-			return "Crank Input (E12)";
+			return "Crank Input (Black A2)";
 		case Gpio::E13:
-			return "Cam Input (E13)";
+			return "Cam Input (Black B2)";
 		case Gpio::E14:
-			return "Digital Input 3 (E14)";
+			return "Digital Input 3 (Black A1)";
 		case Gpio::E15:
-			return "Digital Input 4 (E15)";
+			return "Digital Input 4 (Black B1)";
+		case Gpio::E2:
+			return "Ignition 5 (Grey B5)";
+		case Gpio::E3:
+			return "Ignition 4 (Grey B4)";
+		case Gpio::E4:
+			return "Ignition 3 (Grey B3)";
+		case Gpio::E5:
+			return "Ignition 2 (Grey B2)";
+		case Gpio::E6:
+			return "Ignition 8 (Grey B8)";
 		default:
 			return nullptr;
 	}

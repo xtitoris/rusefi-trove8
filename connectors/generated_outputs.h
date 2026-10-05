@@ -6,6 +6,48 @@
 #pragma once
 
 Gpio GENERATED_OUTPUTS[] = {
-	Gpio::B14, // B14 Output
-// "B14 Output",
+	Gpio::D3, // Injector 1 (Grey A1)
+	Gpio::A9, // Injector 2 (Grey A2)
+	Gpio::D11, // Injector 3 (Grey A3)
+	Gpio::D10, // Injector 4 (Grey A4)
+	Gpio::D2, // Injector 5 (Grey A5)
+	Gpio::A8, // Injector 6 (Grey A6)
+	Gpio::D15, // Injector 7 (Grey A7)
+	Gpio::D12, // Injector 8 (Grey A8)
+	Gpio::D13, // PWM 1 Aux Low-side (Grey C7)
+	Gpio::C6, // PWM 2 Aux Low-side (Grey C6)
+	Gpio::C7, // PWM 3 Aux Low-side (Grey C5)
+	Gpio::C8, // PWM 4 Aux Low-side (Grey C4)
+	Gpio::C9, // PWM 5 Aux Low-side (Grey C3)
+	Gpio::D14, // PWM 6 Aux Low-side (Grey C2)
+	Gpio::C13, // Ignition 1 (Grey B1)
+	Gpio::E5, // Ignition 2 (Grey B2)
+	Gpio::E4, // Ignition 3 (Grey B3)
+	Gpio::E3, // Ignition 4 (Grey B4)
+	Gpio::E2, // Ignition 5 (Grey B5)
+	Gpio::B8, // Ignition 6 (Grey B6)
+	Gpio::B9, // Ignition 7 (Grey B7)
+	Gpio::E6, // Ignition 8 (Grey B8)
+// "Injector 1 (Grey A1)",
+// "Injector 2 (Grey A2)",
+// "Injector 3 (Grey A3)",
+// "Injector 4 (Grey A4)",
+// "Injector 5 (Grey A5)",
+// "Injector 6 (Grey A6)",
+// "Injector 7 (Grey A7)",
+// "Injector 8 (Grey A8)",
+// "PWM 1 Aux Low-side (Grey C7)",
+// "PWM 2 Aux Low-side (Grey C6)",
+// "PWM 3 Aux Low-side (Grey C5)",
+// "PWM 4 Aux Low-side (Grey C4)",
+// "PWM 5 Aux Low-side (Grey C3)",
+// "PWM 6 Aux Low-side (Grey C2)",
+// "Ignition 1 (Grey B1)",
+// "Ignition 2 (Grey B2)",
+// "Ignition 3 (Grey B3)",
+// "Ignition 4 (Grey B4)",
+// "Ignition 5 (Grey B5)",
+// "Ignition 6 (Grey B6)",
+// "Ignition 7 (Grey B7)",
+// "Ignition 8 (Grey B8)",
 }
