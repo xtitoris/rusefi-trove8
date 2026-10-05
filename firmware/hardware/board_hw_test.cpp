@@ -2,7 +2,7 @@
 #include "board_overrides.h"
 #include <array>
 
-static std::array<Gpio, 26> OUTPUTS = {
+static std::array<Gpio, 22> OUTPUTS = {
 	Gpio::D3,  // INJ1
 	Gpio::A9,  // INJ2
 	Gpio::D11, // INJ3
