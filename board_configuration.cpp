@@ -30,6 +30,10 @@ static void trove8SetupSpi() {
 	engineConfiguration->sdCardCsPin = Gpio::B7;
 	engineConfiguration->sdCardSpiDevice = SPI_DEVICE_1;
 	engineConfiguration->isSdCardEnabled = true;
+
+	engineConfiguration->accelerometerSpiDevice = SPI_DEVICE_1;
+	engineConfiguration->accelerometerCsPin = Gpio::B6;
+	engineConfiguration->useSpiImu = true;
 }
 
 static void trove8SetupAnalogSensors() {
