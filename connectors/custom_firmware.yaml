@@ -1,94 +1,200 @@
 pins:
-  - id: B14
+  - id: D3
     class: outputs
-    ts_name: B14 Output
+    type: inj
+    ts_name: Injector 1 (Grey A1)
+
+  - id: A9
+    class: outputs
+    type: inj
+    ts_name: Injector 2 (Grey A2)
+
+  - id: D11
+    class: outputs
+    type: inj
+    ts_name: Injector 3 (Grey A3)
+
+  - id: D10
+    class: outputs
+    type: inj
+    ts_name: Injector 4 (Grey A4)
+
+  - id: D2
+    class: outputs
+    type: inj
+    ts_name: Injector 5 (Grey A5)
+
+  - id: A8
+    class: outputs
+    type: inj
+    ts_name: Injector 6 (Grey A6)
+
+  - id: D15
+    class: outputs
+    type: inj
+    ts_name: Injector 7 (Grey A7)
+
+  - id: D12
+    class: outputs
+    type: inj
+    ts_name: Injector 8 (Grey A8)
+
+  - id: D13
+    class: outputs
+    type: ls
+    ts_name: PWM 1 Aux Low-side (Grey C7)
+
+  - id: C6
+    class: outputs
+    type: ls
+    ts_name: PWM 2 Aux Low-side (Grey C6)
+
+  - id: C7
+    class: outputs
+    type: ls
+    ts_name: PWM 3 Aux Low-side (Grey C5)
+
+  - id: C8
+    class: outputs
+    type: ls
+    ts_name: PWM 4 Aux Low-side (Grey C4)
+
+  - id: C9
+    class: outputs
+    type: ls
+    ts_name: PWM 5 Aux Low-side (Grey C3)
+
+  - id: D14
+    class: outputs
+    type: ls
+    ts_name: PWM 6 Aux Low-side (Grey C2)
+
+  - id: C13
+    class: outputs
+    type: ign
+    ts_name: Ignition 1 (Grey B1)
+
+  - id: E5
+    class: outputs
+    type: ign
+    ts_name: Ignition 2 (Grey B2)
+
+  - id: E4
+    class: outputs
+    type: ign
+    ts_name: Ignition 3 (Grey B3)
+
+  - id: E3
+    class: outputs
+    type: ign
+    ts_name: Ignition 4 (Grey B4)
+
+  - id: E2
+    class: outputs
+    type: ign
+    ts_name: Ignition 5 (Grey B5)
+
+  - id: B8
+    class: outputs
+    type: ign
+    ts_name: Ignition 6 (Grey B6)
+
+  - id: B9
+    class: outputs
+    type: ign
+    ts_name: Ignition 7 (Grey B7)
+
+  - id: E6
+    class: outputs
+    type: ign
+    ts_name: Ignition 8 (Grey B8)
 
   - id: EFI_ADC_0
     class: analog_inputs
 # PA0, currently exposed as AuxAnalog2 (auxAnalogInputs[1])
-    ts_name: Analog Inputs 0 (A0)
+    ts_name: Analog Input 0 (Black B6)
 
   - id: EFI_ADC_1
     class: analog_inputs
 # PA1, currently exposed as AuxAnalog1 (auxAnalogInputs[0])
-    ts_name: Analog Inputs 1 (A1)
+    ts_name: Analog Input 1 (Black A6)
 
   - id: EFI_ADC_2
     class: analog_inputs
 # PA2 - knock channel 1 (RC filter + MCP6004, sampled on ADC3)
-    ts_name: Knock 1 (A2)
+    ts_name: Knock 1 (Black C4)
 
   - id: EFI_ADC_3
     class: analog_inputs
 # PA3 - free, candidate PPS1 input (unassigned until wired in TS)
-    ts_name: Analog Inputs 3 (A3)
+    ts_name: Analog Input 3 (Black A4)
 
   - id: EFI_ADC_4
     class: analog_inputs
 # PA4 - TPS1 main
-    ts_name: TPS1 (A4)
+    ts_name: TPS1 (Black A3)
 
   - id: EFI_ADC_5
     class: analog_inputs
 # PA5 - battery voltage sense (48.7k/10k divider, vbattAdcChannel)
-    ts_name: Battery Sense (A5)
+    ts_name: Battery Sense (Black C1)
 
   - id: EFI_ADC_6
     class: analog_inputs
 # PA7 - free, candidate AC request input
-    ts_name: Analog Inputs 7 (A7)
+    ts_name: Analog Input 7 (Black B5)
 
   - id: EFI_ADC_8
     class: analog_inputs
 # PB0 - TPS1 secondary
-    ts_name: TPS1 Secondary (B0)
+    ts_name: TPS1 Secondary (Black B3)
 
   - id: EFI_ADC_10
     class: analog_inputs
 # PC0 - MAP sensor (sampled by the fast ADC)
-    ts_name: MAP (C0)
+    ts_name: MAP (Black A5)
 
   - id: EFI_ADC_11
     class: analog_inputs
 # PC1 - knock channel 2 (ADC3 channel 11; bodge wire from A6 on first batch)
-    ts_name: Knock 2 (C1)
+    ts_name: Knock 2 (Black C5)
 
   - id: EFI_ADC_12
     class: analog_inputs
 # PC2 - CLT (4.7k bias + 2:1 divider)
-    ts_name: CLT (C2)
+    ts_name: CLT (Black A7)
 
   - id: EFI_ADC_13
     class: analog_inputs
 # PC3 - IAT (4.7k bias + 2:1 divider)
-    ts_name: IAT (C3)
+    ts_name: IAT (Black B7)
 
   - id: EFI_ADC_14
     class: analog_inputs
 # PC4 - free, candidate PPS2 input
-    ts_name: Analog Inputs 14 (C4)
+    ts_name: Analog Input 14 (Black B4)
 
   - id: EFI_ADC_15
     class: analog_inputs
 # PC5 - free
-    ts_name: Analog Inputs 15 (C5)
+    ts_name: Analog Input 15
 
   - id: [E12, E12]
     class: [switch_inputs, event_inputs]
 # MCU_IN_D1 - crank trigger (conditioned digital input)
-    ts_name: Crank Input (E12)
+    ts_name: Crank Input (Black A2)
 
   - id: [E13, E13]
     class: [switch_inputs, event_inputs]
 # MCU_IN_D2 - cam trigger (conditioned digital input)
-    ts_name: Cam Input (E13)
+    ts_name: Cam Input (Black B2)
 
   - id: [E14, E14]
     class: [switch_inputs, event_inputs]
 # MCU_IN_D3 - spare conditioned digital input
-    ts_name: Digital Input 3 (E14)
+    ts_name: Digital Input 3 (Black A1)
 
   - id: [E15, E15]
     class: [switch_inputs, event_inputs]
 # MCU_IN_D4 - spare conditioned digital input
-    ts_name: Digital Input 4 (E15)
+    ts_name: Digital Input 4 (Black B1)
