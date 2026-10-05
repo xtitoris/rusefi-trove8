@@ -21,4 +21,8 @@ DDEFS += -DEFI_SOFTWARE_KNOCK=TRUE -DSTM32_ADC_USE_ADC3=TRUE
 #DDEFS += -DEFI_MAX_31855=TRUE
 
 #see main repo for details on this any many other optional subsystems. We have too many, one has to choose what fits into his choice of stm32
-#DDEFS += -DEFI_ONBOARD_MEMS=TRUE
+DDEFS += -DEFI_ONBOARD_MEMS=TRUE
+
+# onboard LIS2DW12 accelerometer on SPI
+EFI_ONBOARD_MEMS_LIS2DW12 = yes
+DDEFS += -DLIS2DW12_USE_SPI=TRUE
