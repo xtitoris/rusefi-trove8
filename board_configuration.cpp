@@ -89,6 +89,10 @@ static void customBoardDefaultConfiguration() {
 	engineConfiguration->triggerInputPins[0] = Gpio::E12;
 	engineConfiguration->camInputs[0] = Gpio::E13;
 
+	// no H-bridge hardware on this board, rusEFI defaults to two electronic throttles
+	engineConfiguration->etbFunctions[0] = DC_None;
+	engineConfiguration->etbFunctions[1] = DC_None;
+
 	trove8SetupAnalogSensors();
 	trove8SetupSpi();
 
@@ -97,6 +101,9 @@ static void customBoardDefaultConfiguration() {
 
 	engineConfiguration->canTxPin = Gpio::D1;
 	engineConfiguration->canRxPin = Gpio::D0;
+	// no secondary CAN transceiver on this board
+	engineConfiguration->can2TxPin = Gpio::Unassigned;
+	engineConfiguration->can2RxPin = Gpio::Unassigned;
 
 	setCrankOperationMode();
 	setAlgorithm(engine_load_mode_e::LM_SPEED_DENSITY);
