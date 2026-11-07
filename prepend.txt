@@ -4,3 +4,6 @@
 
 ! example of table size override
 #define IGN_TRIM_SIZE 8
+
+
+#define CLT_IDLE_TABLE_RPM_SIZE 6
