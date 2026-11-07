@@ -1,5 +1,5 @@
 #include "pch.h"
 
 void boardTuneDefaults() {
-    engineConfiguration->displacement = 3.8;
+    engineConfiguration->displacement = 3.8f;
 }
