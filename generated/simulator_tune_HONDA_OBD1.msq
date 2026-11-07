@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <msq xmlns="http://www.msefi.com/:msq">
     <page/>
-    <page number="0" size="18272">
+    <page number="0" size="18904">
         <constant name="accelEnrichmentMode">"MS Adder"</constant>
         <constant name="accelerometerCsPin">"NONE"</constant>
         <constant name="accelerometerCsPinMode">"default"</constant>
@@ -738,19 +738,35 @@
          100.0
          110.0
 </constant>
-        <constant cols="1" digits="2" name="cltIdleCorrBins" rows="8" units="{bitStringValue(unitsLabels, useMetricOnInterface)}">
+        <constant cols="1" digits="2" name="cltIdleCorrBins" rows="16" units="{bitStringValue(unitsLabels, useMetricOnInterface)}">
          -40.0
-         -10.0
+         -30.0
+         -20.0
+         0.0
          10.0
+         20.0
+         30.0
          40.0
          60.0
+         70.0
+         80.0
          90.0
-         110.0
+         100.0
+         120.0
+         130.0
          140.0
 </constant>
-        <constant cols="8" digits="2" name="cltIdleCorrTable" rows="2" units="%">
-         75.0 70.0 70.0 65.0 60.0 55.0 55.0 50.0
-         75.0 70.0 70.0 65.0 60.0 55.0 55.0 50.0
+        <constant cols="16" digits="2" name="cltIdleCorrTable" rows="10" units="%">
+         75.0 75.0 70.0 70.0 70.0 65.0 65.0 65.0 60.0 60.0 60.0 55.0 55.0 55.0 50.0 50.0
+         75.0 75.0 70.0 70.0 70.0 65.0 65.0 65.0 60.0 60.0 60.0 55.0 55.0 55.0 50.0 50.0
+         75.0 75.0 70.0 70.0 70.0 65.0 65.0 65.0 60.0 60.0 60.0 55.0 55.0 55.0 50.0 50.0
+         75.0 75.0 70.0 70.0 70.0 65.0 65.0 65.0 60.0 60.0 60.0 55.0 55.0 55.0 50.0 50.0
+         75.0 75.0 70.0 70.0 70.0 65.0 65.0 65.0 60.0 60.0 60.0 55.0 55.0 55.0 50.0 50.0
+         75.0 75.0 70.0 70.0 70.0 65.0 65.0 65.0 60.0 60.0 60.0 55.0 55.0 55.0 50.0 50.0
+         75.0 75.0 70.0 70.0 70.0 65.0 65.0 65.0 60.0 60.0 60.0 55.0 55.0 55.0 50.0 50.0
+         75.0 75.0 70.0 70.0 70.0 65.0 65.0 65.0 60.0 60.0 60.0 55.0 55.0 55.0 50.0 50.0
+         75.0 75.0 70.0 70.0 70.0 65.0 65.0 65.0 60.0 60.0 60.0 55.0 55.0 55.0 50.0 50.0
+         75.0 75.0 70.0 70.0 70.0 65.0 65.0 65.0 60.0 60.0 60.0 55.0 55.0 55.0 50.0 50.0
 </constant>
         <constant cols="1" digits="0" name="cltIdleRpm" rows="16" units="RPM">
          1360
@@ -3008,7 +3024,15 @@
         <constant digits="2" name="ltitSmoothingIntensity" units="ratio">0.0</constant>
         <constant digits="0" name="ltitStableRpmThreshold" units="rpm">0</constant>
         <constant digits="0" name="ltitStableTime" units="s">0</constant>
-        <constant cols="1" digits="1" name="ltitTable" rows="8" units="%">
+        <constant cols="1" digits="1" name="ltitTable" rows="16" units="%">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
          0.0
          0.0
          0.0
@@ -3542,8 +3566,16 @@
         <constant digits="0" name="rotationalIdleController_max_tps" units="%TPS">0</constant>
         <constant digits="0" name="rpmHardLimit" units="rpm">7000</constant>
         <constant digits="0" name="rpmHardLimitHyst" units="RPM">50</constant>
-        <constant cols="1" digits="0" name="rpmIdleCorrBins" rows="2" units="Target RPM">
+        <constant cols="1" digits="0" name="rpmIdleCorrBins" rows="10" units="Target RPM">
          700
+         800
+         1500
+         2100
+         2800
+         3400
+         4100
+         4700
+         5400
          7000
 </constant>
         <constant digits="1" name="rpmSoftLimitFuelAdded" units="%">0.0</constant>
@@ -5597,7 +5629,7 @@
 </constant>
         <constant name="yesUnderstandLocking">"no"</constant>
     </page>
-    <versionInfo firmwareInfo="20261105" nPages="1" signature="rusEFI main.2026.11.07.xyz.1423146488" version="5.0"/>
+    <versionInfo firmwareInfo="20261105" nPages="1" signature="rusEFI main.2026.11.07.trove8.1929173747" version="5.0"/>
     <bibliography author="rusEFI 20261105" writeDate="date"/>
     <settings/>
     <userComments/>
