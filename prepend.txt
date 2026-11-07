@@ -6,4 +6,6 @@
 #define IGN_TRIM_SIZE 8
 
 
-#define CLT_IDLE_TABLE_RPM_SIZE 6
+! extend idle position table
+#define CLT_IDLE_TABLE_CLT_SIZE 16
+#define CLT_IDLE_TABLE_RPM_SIZE 10
