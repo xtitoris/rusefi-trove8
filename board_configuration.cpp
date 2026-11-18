@@ -109,10 +109,9 @@ static void customBoardDefaultConfiguration() {
 	setAlgorithm(engine_load_mode_e::LM_SPEED_DENSITY);
 
 #ifndef EFI_BOOTLOADER
-	// CLT/IAT conditioned through 4.7k bias + 2:1 divider, numbers below get
-	// refined during calibration
-	setCommonNTCSensor(&engineConfiguration->clt, 4700);
-	setCommonNTCSensor(&engineConfiguration->iat, 4700);
+	// CLT/IAT conditioned through 2.7k bias + 2:1 divider
+	setCommonNTCSensor(&engineConfiguration->clt, 2700);
+	setCommonNTCSensor(&engineConfiguration->iat, 2700);
 #endif // EFI_BOOTLOADER
 }
 
